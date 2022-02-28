@@ -2,7 +2,26 @@
 	"folders": [
 		{
 			"path": "."
-		}
+		},
+		{
+			"name": "eureka",
+			"path": "..\\projetos\\eureka"
+		},
+		{
+			"name": "gateway",
+			"path": "..\\projetos\\gateway"
+		},
+		{
+			"name": "produtos",
+			"path": "..\\projetos\\produtos"
+		},
+		{
+			"name": "vendas",
+			"path": "..\\projetos\\vendas"
+		},
+
 	],
-	"settings": {}
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
 }
