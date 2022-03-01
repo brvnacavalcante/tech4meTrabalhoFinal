@@ -1,27 +1,39 @@
-package main.java.br.com.tech4me.vendas.model;
+package br.com.tech4me.vendas.model;
 
-import java.util.Calendar;
+import java.util.Date;
+
+import org.springframework.data.annotation.Id;
 
 public class Venda {
     
-    private Produto produto;
-    private Calendar datavenda = Calendar.getInstance();
+    @Id
+    private String id;
+    private String codigoProduto;
+    private Date dataVenda = new Date();
     private int qtVendida;
-
-    public Produto getProduto() {
-        return this.produto;
+    
+    public String getId() {
+        return this.id;
+    }
+    
+    public void setId(String id) {
+        this.id = id;
+    }
+    
+    public String getCodigoProduto() {
+        return this.codigoProduto;
     }
 
-    public void setProduto(Produto produto) {
-        this.produto = produto;
+    public void setCodigoProduto(String codigoProduto) {
+        this.codigoProduto = codigoProduto;
     }
 
-    public Calendar getDatavenda() {
-        return this.datavenda;
+    public Date getDataVenda() {
+        return this.dataVenda;
     }
 
-    public void setDatavenda(Calendar datavenda) {
-        this.datavenda = datavenda;
+    public void setDataVenda(Date dataVenda) {
+        this.dataVenda = dataVenda;
     }
 
     public int getQtVendida() {

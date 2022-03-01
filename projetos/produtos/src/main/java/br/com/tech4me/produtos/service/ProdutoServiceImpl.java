@@ -13,7 +13,7 @@ import br.com.tech4me.produtos.repository.ProdutoRepository;
 import br.com.tech4me.produtos.shared.ProdutoDto;
 
 @Service
-public class ProdutoServiceImpl implements ProdutoService{
+public class ProdutoServiceImpl implements ProdutoService {
 
     @Autowired
     ProdutoRepository repository;
